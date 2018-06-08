@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 import { AppComponent } from './app.component';
-import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
-import { ContactListComponent } from './contacts/contact-list/contact-list.component';
+import { LoginComponent } from './login/login.component';
+
+import { routing } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactDetailsComponent,
-    ContactListComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    ReactiveFormsModule,
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
