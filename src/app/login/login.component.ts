@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
     loading = false;
     submitted = false;
     returnUrl: string;
+    register: environment.REGISTER_URI;
 
     constructor(
         private formBuilder: FormBuilder,
