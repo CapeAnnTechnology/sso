@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  REGISTER_URI: 'http://172.16.1.25:4200/register',
 };
 
 /*
